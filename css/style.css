@@ -45,3 +45,35 @@ body {
 #features {
     background-color: var(--secondary);
 }
+
+#features .icon span {
+    border-radius: 50%;
+}
+
+#features .features-heading h2 {
+    color: #000;
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 1em;
+}
+
+#features .box {
+    padding: 30px;
+}
+
+#features .box:hover  {
+    background-color: var(--base-color);
+}
+
+#features .box:hover .icon span {
+    background-color: white;
+    color: var(--base-color);
+}
+
+#features .box:hover .description h3  {
+    color: white;
+}
+
+#features .box:hover .description p  {
+    color: #f8f9fa;
+}
