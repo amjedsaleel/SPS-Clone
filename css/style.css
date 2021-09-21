@@ -1,0 +1,47 @@
+:root {
+    --montserrat-font: Montserrat;
+    --base-color: #58d3b5;
+    --secondary: #f6f6f6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+}
+
+/* header section */
+#header {
+    padding-top: 25px;
+}
+#header a {
+    font-size: 32px;
+    font-family: var(--montserrat-font);    
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+#header span {
+    color: var(--base-color);
+}
+
+
+/* Introduction section */
+#introduction {
+    margin-top: 30px;
+}
+
+#introduction .right h2 {
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+/* Features */
+#features {
+    background-color: var(--secondary);
+}
