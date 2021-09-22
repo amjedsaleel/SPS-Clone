@@ -113,3 +113,10 @@ body {
 }
 
 /* Cost section*/
+
+
+/* Convocation */
+#convocation  h2{
+    font-size: 40px;
+    font-weight: 900;
+}
