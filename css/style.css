@@ -77,3 +77,9 @@ body {
 #features .box:hover .description p  {
     color: #f8f9fa;
 }
+
+
+/*  SPS Brief */
+#sps-brief {
+    padding: 1em 0em;
+}
