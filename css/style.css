@@ -41,6 +41,29 @@ body {
     font-weight: 900;
 }
 
+#introduction p {
+    font-size: 16px;
+    color: #1F070F;
+    font-family: var(--montserrat-font);
+}
+
+#apply-now {
+    background-color: #00d2b5;
+    border-width: 2px;
+    border-color: #00d2b5;
+    box-shadow: 0 4px 20px -5px rgb(0 210 181 / 40%);
+    border-radius: 30px;
+    font-size: 16px;
+    padding: 10px 30px;
+    color: #fff;
+
+}
+
+#apply-now:hover {
+    background-color: #fff;
+    color: #1F070F;
+}
+
 /* Features */
 #features {
     background-color: var(--secondary);
