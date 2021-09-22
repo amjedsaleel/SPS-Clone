@@ -103,3 +103,11 @@ body {
     background-color: #fff;
     padding: 30px;
 }
+
+
+/* Want to join SPS */
+#join h2 {
+    font-size: 40px;
+    font-weight: 900;
+    /* padding-bottom: 30px; */
+}
