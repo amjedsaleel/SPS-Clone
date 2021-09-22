@@ -69,8 +69,22 @@ body {
     background-color: var(--secondary);
 }
 
-#features .icon span {
+#features .box {
+    background-color: #fff;
+}
+
+#features .icon  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:40px;
+    height:40px;
     border-radius: 50%;
+    background-color: var(--base-color);
+}
+
+#features .icon span {
+    color: #fff;
 }
 
 #features .features-heading h2 {
@@ -82,23 +96,46 @@ body {
 
 #features .box {
     padding: 30px;
+    height: 260px;
+    /* -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease; */
+}
+
+#features .description-heading {
+    font-size: 16px !important;
+    color: black;
+}
+
+#features .description p {
+    color: #808080;
 }
 
 #features .box:hover  {
     background-color: var(--base-color);
+    box-shadow: 0 4px 20px -5px rgba(0, 210, 181, 0.4);
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+    
+}
+
+#features .box:hover .icon  {
+    background-color: #fff;
 }
 
 #features .box:hover .icon span {
-    background-color: white;
     color: var(--base-color);
 }
 
 #features .box:hover .description h3  {
     color: white;
+    font-size: 16px;
 }
 
 #features .box:hover .description p  {
     color: #f8f9fa;
+    font-size: 15px;
 }
 
 
