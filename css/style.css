@@ -132,11 +132,17 @@ body {
     max-width: 90%;
 }
 
+#faqs .message-container {
+    height: 716px;
+    overflow-y: scroll;
+}
+
 .send {
     max-width: 90%;
     display: inline-block;
     background-color: var(--base-color);
     border-radius: 25px;
+    /* float: right; */
 }
 
 .receive {
@@ -144,16 +150,28 @@ body {
     background-color: #e5e5ea;
     max-width: 90%;
     border-radius: 25px;
+    /* float: left; */
 }
 
+#faqs .message-time p {
+    font-size: 10px;
+    display: none;
+    /* transition: all .5s; */
+
+}
+
+ #faqs .wrapper:hover  .message-time p {
+    display: block;
+    color: #6c757d;    
+}
 
 #faqs .right span {
     font-size: 18px;
 }
 
-#faqs .message-container {
+#faqs .message-container p{
     margin-bottom: 0em;
-
+    transition: all .5s;
 }
 
 #faqs .right .description h3 {
