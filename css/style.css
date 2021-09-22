@@ -1,7 +1,7 @@
 :root {
-    --montserrat-font: Montserrat;
     --base-color: #58d3b5;
-    --secondary: #f6f6f6;
+    --secondary: #f6f6f6;   
+    --montserrat-font: Montserrat;
 }
 
 * {
@@ -119,4 +119,33 @@ body {
 #convocation  h2{
     font-size: 40px;
     font-weight: 900;
+}
+
+
+/* FAQS */
+#faqs h2 {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+#faqs .right span {
+    font-size: 18px;
+}
+
+#faqs .right .description h3 {
+    font-size: 18px;
+    padding-bottom: 10px;
+    font-family: 'Poppins';
+}
+
+#faqs .right .description p {
+    color: var(--base-color);
+    font-family: 'Poppins';
+
+}
+
+#faqs .right .description .hover-item:hover {
+    transition: .3s all ease;
+    cursor: pointer;
+    color: #17a2b8;
 }
