@@ -86,3 +86,20 @@ body {
 
 
 /* Life at SPS */
+
+
+
+/* Domains */
+#domains {
+    background-color: var(--secondary);
+}
+
+#domains .section-heading {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+#domains .box {
+    background-color: #fff;
+    padding: 30px;
+}
