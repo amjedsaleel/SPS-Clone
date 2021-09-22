@@ -128,8 +128,32 @@ body {
     font-weight: 900;
 }
 
+#faqs .wrapper {
+    max-width: 90%;
+}
+
+.send {
+    max-width: 90%;
+    display: inline-block;
+    background-color: var(--base-color);
+    border-radius: 25px;
+}
+
+.receive {
+    display: inline-block;
+    background-color: #e5e5ea;
+    max-width: 90%;
+    border-radius: 25px;
+}
+
+
 #faqs .right span {
     font-size: 18px;
+}
+
+#faqs .message-container {
+    margin-bottom: 0em;
+
 }
 
 #faqs .right .description h3 {
