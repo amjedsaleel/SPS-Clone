@@ -207,7 +207,7 @@ body {
 
 #domains .box:hover {
     background-color: var(--base-color);
-    top: -8;
+    top: -8px;
 }
 
 #domains .box:hover p {
@@ -223,6 +223,18 @@ body {
     font-size: 40px;
     font-weight: 900;
     /* padding-bottom: 30px; */
+}
+
+#join h2 {
+    font-size: 20px;
+    font-family: var(--montserrat-font);
+    color: #000;
+}
+
+#join p {
+    font-size: 16px;
+    color: #808080;
+    font-family: var(--montserrat-font);
 }
 
 /* Cost section*/
