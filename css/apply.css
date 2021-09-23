@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: #f6f6f6;
+    background-color: #f6f6f6;   
 }
 
 #header {
@@ -27,4 +27,78 @@ body {
 
 #header span {
     color: var(--base-color);
+}
+
+#registration .box {
+    background-color: #ffffff;
+}
+
+#registration .heading {
+    font-size: 30px;
+    color: #57d1b5;  
+    font-family: var(--montserrat-font); 
+    font-weight: 700;
+}
+
+form {
+    padding: 80px 90px;
+
+}
+
+
+.input-box {
+    position: relative;
+    margin-bottom: 32px;    ;   
+}
+
+input[type="text"],
+input[type="number"] {
+ border-top: none;
+ border-left: none;
+ border-right: none;
+ border-radius: 0px;
+ outline: none;
+
+}
+
+.form-control:focus {
+    outline: none !important;
+}
+
+input {
+    color: #808080 !important;
+    font-size: 16px !important;
+    font-weight: 300;
+}
+
+select,
+textarea {
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-radius: 0px !important;
+}
+
+select {
+    color: #6c757d !important;
+}
+
+form p {
+    color: #6c757d;
+    font-size: 16px;
+}
+
+form button {
+    background-color: #52cab6 !important;
+    border-color: #52cab6 !important;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 0px !important;
+    letter-spacing: 2px;
+}
+
+form button:hover {
+    opacity: 0.8;
 }
