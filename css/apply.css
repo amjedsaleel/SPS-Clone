@@ -48,16 +48,18 @@ form {
 
 .input-box {
     position: relative;
-    margin-bottom: 32px;    ;   
+    margin-bottom: 32px;    
 }
 
 input[type="text"],
-input[type="number"] {
+input[type="number"],
+input[type="email"]{
  border-top: none;
  border-left: none;
  border-right: none;
  border-radius: 0px;
  outline: none;
+ background-color: white !important;
 
 }
 
@@ -66,9 +68,11 @@ input[type="number"] {
 }
 
 input {
-    color: #808080 !important;
+    color: #808080 !important; 
     font-size: 16px !important;
     font-weight: 300;
+    border-color: #e5e5e5;
+
 }
 
 select,
@@ -77,6 +81,7 @@ textarea {
     border-left: none !important;
     border-right: none !important;
     border-radius: 0px !important;
+    border-color: #e5e5e5;
 }
 
 select {
@@ -102,3 +107,11 @@ form button {
 form button:hover {
     opacity: 0.8;
 }
+
+.error {
+    display: none;
+    font-size: 16px;
+    font-family: var(--montserrat-font);
+    color: red
+}
+
