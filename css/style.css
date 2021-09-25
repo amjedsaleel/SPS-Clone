@@ -267,15 +267,32 @@ body {
     display: inline-block;
     background-color: var(--base-color);
     border-radius: 25px;
-    /* float: right; */
+    cursor: pointer;
+}
+
+.send p {
+    font-size: 16px;
+    font-family: var(--montserrat-font);
+    color: #fff;
 }
 
 .receive {
     display: inline-block;
     background-color: #e5e5ea;
-    max-width: 90%;
+    cursor: pointer;
+    /* max-width: 90%; */
     border-radius: 25px;
     /* float: left; */
+}
+
+.reveicve-box {
+    max-width: 90%;
+}
+
+.receive p {
+    font-size: 16px;
+    font-family: var(--montserrat-font);
+    color: #000;
 }
 
 #faqs .message-time p {
