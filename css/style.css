@@ -333,3 +333,21 @@ body {
     cursor: pointer;
     color: #17a2b8;
 }
+
+
+/* footer */
+
+#footer a {
+    color: var(--base-color);
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: #008673;
+}
+
+#footer h3 {
+    font-size: 16px;
+    font-family: var(--montserrat-font);
+    color: #808080;
+}
