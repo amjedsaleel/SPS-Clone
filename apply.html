@@ -25,6 +25,9 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/apply.css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
     <title>Register Form|SPS</title>
 </head>
 
@@ -49,16 +52,16 @@
                             <h2 class="heading">REGISTRATION</h2>
                         </div>
                         <div class="col-md-12 input-box">
-                            <input type="text" class="form-control shadow-none" placeholder="Full Name" id="full-name">
+                            <input type="text" class="form-control shadow-none" placeholder="Full Name" id="full-name" name="full-name">
                             <span id="name-error" class="mt-2 error">This field is required</span>
                         </div>
                         <div class="col-md-6 input-box">
-                            <input type="text" class="form-control shadow-none" placeholder="Place" id="place">
+                            <input type="text" class="form-control shadow-none" placeholder="Place" name="place" id="place">
                             <span id="place-error" class="mt-2 error">This field is required</span>
 
                         </div>
                         <div class="col-md-6 input-box d-md-flex justify-content-end">
-                            <select class="form-select shadow-none" id="gender">
+                            <select class="form-select shadow-none" name="gender" id="gender">
                                 <option selected>Gender</option>
                                 <option>Male</option>
                                 <option>Female</option>
@@ -66,17 +69,17 @@
                             <span id="gender-error" class="mt-2 error">This field is required</span>
                         </div>
                         <div class="col-12 input-box">
-                            <input type="email" class="form-control shadow-none" placeholder="Email" id="email">
+                            <input type="email" class="form-control shadow-none" placeholder="Email" id="email" name="email">
                             <span id="email-error" class="mt-2 error">This field is required</span>
                         </div>
                         <div class="col-md-6 input-box">
                             <input type="number" class="form-control shadow-none" placeholder="Contact No"
-                                id="contact-number">
+                                id="contact-number" name="number">
                             <span id="contact-number-error" class="mt-2 error">This field is required</span>
 
                         </div>
                         <div class="col-md-6 input-box">
-                            <select class="form-select shadow-none" id="employment-status">
+                            <select class="form-select shadow-none" id="employment-status" name="employment">
                                 <option selected>Employment Status</option>
                                 <option>Employed</option>
                                 <option>Fresher</option>
@@ -86,7 +89,7 @@
 
                         </div>
                         <div class="col-md-12 input-box">
-                            <select class="form-select shadow-none" id="qualification">
+                            <select class="form-select shadow-none" id="qualification" name="qualification">
                                 <option selected>Educational Qualification</option>
                                 <option>B.Tech</option>
                                 <option>M.Tech</option>
@@ -100,35 +103,35 @@
                         </div>
                         <div class="col-md-12 input-box">
                             <input type="text" class="form-control shadow-none"
-                                placeholder="Name of College / Organization" id="college">
+                                placeholder="Name of College / Organization" id="college" name="College-or-Organization">
                             <span id="college-error" class="mt-2 error">This field is required</span>
                         </div>
                         <div class="col-md-6 input-box">
                             <input type="number" class="form-control shadow-none" placeholder="Your of Graduation"
-                                id=graduation-year>
+                                id="graduation-year" name="graduation-year">
                             <span id="graduation-year-error" class="mt-2 error">This field is required</span>
 
                         </div>
                         <div class="col-md-12 input-box">
                             <textarea class="form-control shadow-none" rows="2" placeholder="Tell us more about you"
-                                id="about-as"></textarea>
+                                id="about-as" name="about-as"></textarea>
                                 <span id="about-as-error" class="mt-2 error">This field is required</span>
     
                         </div>
                         <div class="col-md-12 input-box">
                             <textarea class="form-control shadow-none" rows="2"
-                                placeholder="Why do you want to join SPS?" id="join-sps"></textarea>
+                                placeholder="Why do you want to join SPS?" id="join-sps" name="join-sps"></textarea>
                                 <span id="join-sps-error" class="mt-2 error">This field is required</span>
 
                         </div>
                         <div class="col-md-12 input-box">
                             <textarea class="form-control shadow-none" rows="2"
-                                placeholder="What motives you to work hard every day" id="motives"></textarea>
+                                placeholder="What motives you to work hard every day" id="motives" name="motives"></textarea>
                                 <span id="motives-error" class="mt-2 error">This field is required</span>
 
                         </div>
                         <div class="col-md-12 input-box">
-                            <select class="form-select shadow-none" id="learn-about-sps">
+                            <select class="form-select shadow-none" id="learn-about-sps" name="learn-about-sps">
                                 <option selected>From where did you learn about SPS?</option>
                                 <option>Crossroads Youtube Channel</option>
                                 <option>YouTube</option>
@@ -156,6 +159,24 @@
         </div>
     </div>
 
+    <script>
+        $("#form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycby9UeDN9qIbdN64B7mjzkIyEhbHk5H9MxpI5BQ5TgpOdl_8RdKaOzshn5DOH18Pt2EUdQ/exec",
+                data:$("#form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"

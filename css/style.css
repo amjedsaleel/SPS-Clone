@@ -262,6 +262,14 @@ body {
     overflow-y: scroll;
 }
 
+#faqs .message-container::-webkit-scrollbar {
+    width: 3px;
+}
+
+#faqs .message-container::-webkit-scrollbar-thumb {
+    background-color: #bec4c8;
+}
+
 .send {
     max-width: 90%;
     display: inline-block;
