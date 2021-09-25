@@ -141,3 +141,135 @@ function validateForm() {
 }
 
 
+function validateEmptyField(inputField, errorBox) {
+    
+    if(inputField.value.length === 0) {
+        inputField.style.borderColor = "red";  // eg:- #full-name
+        errorBox.style.display = "block"; // eg- Full name error box
+
+    } else {
+        errorBox.style.display = "none";
+        inputField.style.borderColor = "#e5e5e5";
+
+    }
+}
+
+
+// Checks Name field
+fullName.addEventListener("keyup", function() {
+    let errorBox =  document.getElementById("name-error");
+    validateEmptyField(fullName, errorBox);
+})
+
+// checks place Field
+place.addEventListener("keyup", function() {
+    let errorBox =  document.getElementById("place-error");
+    validateEmptyField(place, errorBox);
+})
+
+// checks gender field
+gender.addEventListener("click", function() {
+    let errorBox =  document.getElementById("gender-error");
+
+    if(gender.value === "Gender") {
+        errorBox.style.display = "block";
+        gender.style.borderColor = "red";
+    } else {
+        errorBox.style.display = "none";
+        gender.style.borderColor = "#e5e5e5";
+    }  
+})
+
+// checks email Field
+email.addEventListener("keyup", function() {
+    let errorBox =  document.getElementById("email-error");
+    validateEmptyField(email, errorBox);
+})
+
+// checks contact number Field
+contactNumber.addEventListener("keyup", function() {
+    let errorBox =  document.getElementById("contact-number-error");
+    validateEmptyField(contactNumber, errorBox);
+})
+
+// checks employment status Field
+employmentStatus.addEventListener("click", function() {
+    let errorBox =  document.getElementById("employment-status-error");
+
+    if(employmentStatus.value === "Employment Status") {
+        errorBox.style.display = "block";
+        employmentStatus.style.borderColor = "red";
+    } else {
+        errorBox.style.display = "none";
+        employmentStatus.style.borderColor = "#e5e5e5";
+    }  
+})
+
+// checks educational qualification Field
+qualification.addEventListener("click", function() {
+    let errorBox =  document.getElementById("qualification-error");
+
+    if(qualification.value === "Educational Qualification") {
+        errorBox.style.display = "block";
+        qualification.style.borderColor = "red";
+    } else {
+        errorBox.style.display = "none";
+        qualification.style.borderColor = "#e5e5e5";
+    }  
+})
+
+// Name of college / Organization
+college.addEventListener("keyup", function() {
+    let errorBox =  document.getElementById("college-error");
+    validateEmptyField(college, errorBox);
+})
+
+// checks your of graduation year field
+graduationYear.addEventListener("keyup", function() {
+    let errorBox =  document.getElementById("graduation-year-error");
+    validateEmptyField(graduationYear, errorBox);
+})
+
+// checks about as field
+aboutAs.addEventListener("keyup", function() {
+    let errorBox =  document.getElementById("about-as-error");
+    validateEmptyField(aboutAs, errorBox);
+})
+
+// checks join sps field
+joinSps.addEventListener("keyup", function() {
+    let errorBox =  document.getElementById("join-sps-error");
+    validateEmptyField(joinSps, errorBox);
+})
+
+// checks your motives field
+motives.addEventListener("keyup", function() {
+    let errorBox =  document.getElementById("motives-error");
+    validateEmptyField(motives, errorBox);
+})
+
+// checks learn about sps Field
+learnAboutSps.addEventListener("click", function() {
+    let errorBox =  document.getElementById("learn-about-sps-error");
+
+    if(learnAboutSps.value === "From where did you learn about SPS?") {
+        errorBox.style.display = "block";
+        learnAboutSps.style.borderColor = "red";
+    } else {
+        errorBox.style.display = "none";
+        learnAboutSps.style.borderColor = "#e5e5e5";
+    }  
+})
+
+// checks FAQs Field
+checkBox.addEventListener("change", function() {
+    let errorBox =  document.getElementById("check-box-error");
+
+    if (checkBox.checked === false) {
+        errorBox.style.display = "block";    
+        checkBox.style.borderColor = "red";
+    } else {
+        errorBox.style.display = "none";    
+        checkBox.style.borderColor = "#e5e5e5";
+    }
+})
