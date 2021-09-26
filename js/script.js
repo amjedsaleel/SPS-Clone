@@ -168,7 +168,7 @@ place.addEventListener("keyup", function() {
 })
 
 // checks gender field
-gender.addEventListener("click", function() {
+gender.addEventListener("change", function() {
     let errorBox =  document.getElementById("gender-error");
 
     if(gender.value === "Gender") {
@@ -193,7 +193,7 @@ contactNumber.addEventListener("keyup", function() {
 })
 
 // checks employment status Field
-employmentStatus.addEventListener("click", function() {
+employmentStatus.addEventListener("change", function() {
     let errorBox =  document.getElementById("employment-status-error");
 
     if(employmentStatus.value === "Employment Status") {
@@ -206,7 +206,7 @@ employmentStatus.addEventListener("click", function() {
 })
 
 // checks educational qualification Field
-qualification.addEventListener("click", function() {
+qualification.addEventListener("change", function() {
     let errorBox =  document.getElementById("qualification-error");
 
     if(qualification.value === "Educational Qualification") {
@@ -249,7 +249,7 @@ motives.addEventListener("keyup", function() {
 })
 
 // checks learn about sps Field
-learnAboutSps.addEventListener("click", function() {
+learnAboutSps.addEventListener("change", function() {
     let errorBox =  document.getElementById("learn-about-sps-error");
 
     if(learnAboutSps.value === "From where did you learn about SPS?") {
