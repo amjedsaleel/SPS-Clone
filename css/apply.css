@@ -115,3 +115,6 @@ form button:hover {
     color: red
 }
 
+.faqs {
+    color: var(--base-color);
+}
