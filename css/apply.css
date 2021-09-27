@@ -40,11 +40,6 @@ body {
     font-weight: 700;
 }
 
-form {
-    padding: 80px 90px;
-
-}
-
 
 .input-box {
     position: relative;
@@ -117,4 +112,18 @@ form button:hover {
 
 .faqs {
     color: var(--base-color);
+}
+
+
+@media (min-width: 576px) {
+    form {
+        padding: 80px 90px;
+    
+    }
+}
+
+@media (max-width: 576px) {
+    form {
+        padding: 50px 40px;    
+    }
 }
